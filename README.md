@@ -43,8 +43,3 @@ Built with **Java 21** and **Maven**.
   - **Happy path scenarios** (valid purchases).
   - **Invalid scenarios** (business rule violations).
 - Includes **boundary tests** (e.g., exactly 25 tickets vs. >25 tickets).
-
-Run all tests with:
-
-```bash
-mvn clean test
