@@ -18,7 +18,7 @@ import static org.mockito.Mockito.*;
 
 /**
  * Unit tests for {@link TicketServiceImpl}.
- * <p>
+
  * These tests validate that all business rules are enforced,
  * and that the correct interactions are made with the external
  * {@link TicketPaymentService} and {@link SeatReservationService}.
@@ -46,7 +46,6 @@ class TicketServiceImplTest {
 
     /**
      * Helper method to construct a {@link TicketTypeRequest}.
-     * Keeps test code concise and readable.
      */
     private static TicketTypeRequest req(Type type, int n) {
         return new TicketTypeRequest(type, n);
@@ -79,7 +78,7 @@ class TicketServiceImplTest {
      * Group of tests covering invalid request scenarios.
      * Each test ensures that the service rejects invalid inputs
      * by throwing {@link InvalidPurchaseException} or
-     * {@link IllegalArgumentException}.
+      {@link IllegalArgumentException}.
      */
 
     @Nested
@@ -156,7 +155,7 @@ class TicketServiceImplTest {
     }
 
     /**
-     * Edge case:
+      Edge case:
      * Exactly 25 tickets purchased (20 adults, 5 children).
      * Should be valid and result in correct payment and seat reservations.
      */
@@ -170,10 +169,6 @@ class TicketServiceImplTest {
                 .reserveSeat(10L, 20 + 5);
     }
 
-    /**
-     * Additional boundary tests for validating the 25-ticket cap.
-     * These confirm the maximum limit behaves correctly with different combinations.
-     */
 
     /** Boundary: 25 adults is valid */
     @Test

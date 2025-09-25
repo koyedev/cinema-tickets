@@ -9,18 +9,16 @@ import uk.gov.dwp.uc.pairtest.exception.InvalidPurchaseException;
 import java.util.Objects;
 
 /**
- * Implementation of the TicketService interface.
- * <p>
  * This class enforces all business rules around ticket purchases:
- * <ul>
- *   <li>Only valid account IDs (>0) are accepted.</li>
- *   <li>At least one adult must be present when purchasing child or infant tickets.</li>
- *   <li>A maximum of 25 tickets may be purchased in one transaction.</li>
- *   <li>Infants do not require a ticket or a seat.</li>
- * </ul>
- * <p>
+
+ *   Only valid account IDs > 0 are accepted.
+ *   At least one adult must be present when purchasing child or infant tickets.
+ *   A maximum of 25 tickets may be purchased in one transaction.
+ *   Infants do not require a ticket or a seat.
+
  * Once validated, the class calculates the correct total payment and
- * number of seats to reserve, and delegats to the external
+   number of seats to reserve, and delegats to the external
+
  * {@link TicketPaymentService} and {@link SeatReservationService}.
  */
 
@@ -54,10 +52,6 @@ public class TicketServiceImpl implements TicketService {
     }
 
     /**
-     * Validates the purchase request against all business rules,
-     * calculates the total payment and seats, and delegates to the
-     * external services.
-     *
      * @param accountId           the account making the purchase
      * @param ticketTypeRequests  one or more ticket requests
      * @throws InvalidPurchaseException if validation fails
