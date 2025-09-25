@@ -5,7 +5,7 @@ This project is an implementation of the **Cinema Ticket Service** coding exerci
 It enforces all specified business rules for purchasing tickets, calculates correct totals,  
 and interacts with external payment and seat reservation services.  
 
-Built with **Java 21** and **Maven**.  
+Built with **Java 21** .  
 
 ---
 
