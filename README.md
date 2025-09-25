@@ -38,7 +38,7 @@ Built with **Java 21** .
 ---
 
 ## 🧪 Testing
-- Tests are written using **JUnit 5** and **Mockito**.
+- Tests are written using **JUnit** and **Mockito**.
 - Cover both:
   - **Happy path scenarios** (valid purchases).
   - **Invalid scenarios** (business rule violations).
